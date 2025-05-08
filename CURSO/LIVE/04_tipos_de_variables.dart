@@ -72,14 +72,90 @@ void main() {
   final valorNumericoDecimal = double.parse(precioFixed);
   print(valorNumericoDecimal);
 
-  /// Tarea
+  /// Tarea 1
   /// 1. Consola impriman -> Mi nombre es Variable y tengo Variable
   /// 2. Usar el double.parse pero en lugar de guardar "10.1" ("Pepito").
   /// Qué sucede?
   /// 3. Como puedo resolver eso? -> Pista double.tryParse
 
 
+  // Boleanos 1 0 - true o false
+  // palabra reservada bool
+  // false -> palabras reservadas
+  // true -> palabras reservadas
+  // Variables en camelCase
+  bool miPrimerBoleano = true;
+  print(miPrimerBoleano);
+  
 
+  bool _isLoading = true;
+  // pasa algo - pasa un tiempo
+  _isLoading = false;
+  print(_isLoading);
+  /// _ que hace? 
+  /// variable de tipo reservada _isLoading
+  
+
+  /// Me por comprar Leche, arroz, azucar, panes 
+  String a = "leche";
+  String b = "arroz";
+  String c = "azucar";
+  String d = "panes";
+
+  // Listas 
+  // Las listas se crean [los elementos de la lista]
+  // Como se declara la lista
+  // List<Tipo de dato> nombreVariable = [los elementos]
+
+  List<String> compras = ["leche","arroz","azucar","panes"];
+
+  List<String> compras2 = [a,b,c,d];
+
+  print(compras);
+  print(compras2);
+
+  // Lista de precios 1.25 3.25 1 3 2
+  List<double> precios = [1.25, 3.25, 1, 3, 2];
+  print(precios); // ("1")
+
+  // Lista 1.25 1 Sol true, quiero que sea el mismo tipo de variable
+  // List<var> x
+  // List<int,double,String,bool> x
+  // Sin declarar
+  // dynamic
+  // dynamic
+  var listaX = [1.25, 1, "Sol", true];
+  List<dynamic> listaY = [1.25, 1, "Sol", true];
+  /// Variable que es inmutable 
+  final listaZ = [1.25, 1, "Sol", true];
+
+  // Que puedo hacer con las listas?
+  print(listaZ);
+  // add se puede agregar elementos a la lista
+  listaZ.add("Casa");
+  print(listaZ);
+  // Pueden acceder a un valor en específico
+  // Posiciones 
+  // [ 1.25 , 1 , Sol , true , Casa ]
+  //    0     1    2      3      4 
+  print(listaZ[4]);
+
+  // Como saber que posición es?
+  // listaZ.firstWhere(test) -> callbacks funciones - true
+  
+  // Longitud de la lista
+  print(listaZ.length);
+
+  // Tarea 2 
+  // 1. Crearse una lista de lo que sea 
+  // 2. Imprimir el último valor de la lista. Sin usar las posiciones quemadas
+  // listaZ[5]
+  // [1,2,3,4,5] -> 5
+  // [1,2,3,4,5,6,7] -> 7
+  // No usar el last 
+
+  /// Mapas Ejemplo práctico
+  /// Sucursales - Producto ofrece cada uno
 
 
 }

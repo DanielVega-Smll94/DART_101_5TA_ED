@@ -34,6 +34,19 @@ int edad = 20; // Puedes cambiar la edad para probar diferentes casos
   } else {
     print("Edad no válida");
   }
+
+  if(edad >= 18){
+    print("Eres mayor de edad");
+  }
+  if(edad >= 14 && edad < 18){
+    print("Eres adolescente");
+  }
+  if(edad > 4 && edad < 14){
+    print("Eres un niño");
+  }
+  if(edad>=0 && edad<=4){
+    print("Eres un bebe");
+  }
 }
 // Guía 
 /*
